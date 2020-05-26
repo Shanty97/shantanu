@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="./style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 
 	<style type="text/css">
 		body {
@@ -25,23 +26,42 @@
 			background: #000 !important;
 		}
 
-		button {
+		a:hover,button:hover{
+			text-decoration: none !important;
+		}
+
+		h4.ui.header{
+			font-size: 20px;
+		}
+
+		/*button {
 			border-radius: 8px !important;
 			background: #000 !important;
 		}
 		button:hover{
 			background: #0d7377 !important;
-		}
+		}*/
 
 		
 
-		button:focus{
+		/*button:focus{
 			box-shadow: none;
+			border: 2px solid #0d7377 !important;
+
+		}*/
+		#collapseOne{
+			height: 160px !important;
+		}
+
+		button:active{
 			border: 2px solid #0d7377 !important;
 
 		}
 		h1 {
 			color: #00adb5 !important;
+		}
+		h2:hover{
+			text-decoration: none !important;
 		}
 
 
@@ -96,130 +116,143 @@
 		</h1>
 	</div>
 
-	<div>
-	<button id="project_button" class="btn btn-primary btn-dark mt-2 mr-1" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-		Projects
-	</button>
-	<button id="about_button" class="btn btn-dark mt-2 mr-1 " type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
-		About
-	</button>
-	<button id="contact_button" class="btn btn-dark mt-2 mr-1 " type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
-		Contact
-	</button>
-
-
-	<div class="collapse" id="collapseExample1">
-		<div class="card text-white bg-dark m-2" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
-		  <div class="card-body">
-		    <h5 class="card-title">Hi, I'm Shantanu !</h5>
-		    <p class="card-text">A Computer Science Engineering Student who has a passion for design and development.</p>
-		    <kbd>Web development</kbd>
-		    <kbd>Web Design</kbd>
-		    <br>
-		    <ul class="mt-2 text-center list-group list-group-horizontal-md" style="color: #000;">
-				<a href="#" class="list-group-item list-group-item-action"><strong>Github</strong></a>
- 				<a href="#" class="list-group-item list-group-item-action"><strong>Behance</strong></a>
-  				<a href="#" class="list-group-item list-group-item-action"><strong>LinkedIn</strong></a>
-  				<a href="#" class="list-group-item list-group-item-action"><strong>Youtube</strong></a>
-  				<a href="#" class="list-group-item list-group-item-action"><strong>Instagram</strong></a>
-			</ul>
-		  </div>
-		</div>
-	</div>
-
-	<div class="collapse" id="collapseExample2">
-		<div class="card text-white bg-dark m-2" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
-		  <div class="card-body">
-		    <h5 class="card-title">How to reach out ?</h5>
-		    <p class="card-text">Email</p>
-		    
-		  </div>
-		</div>
-	</div>	
-
-	<div class="collapse" id="collapseExample" style="overflow: hidden;">
-		<div id="parent_proCards" class="d-flex p-2 bd-highlight flex-wrap" style="overflow-y: scroll; height: 216px; width: 62%;">
-		<div id="proCards" class="card text-white bg-dark m-2" style="width: 100%; ">
-		  
-		  <div class="card-body">
-		    <h5 class="card-title" style="color: #fff;"><strong>Spark Messenger</strong></h5>
-		    <p class="card-text" >An Android messaging application to connect with the world.</p>
-		    <kbd>Android</kbd>
-		    <kbd>Figma</kbd><br>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Code</a>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Live</a>
-		  </div>
-		</div>
-
-		<div id="proCards" class="card text-white bg-dark m-2" style="width: 18rem; ">
-		  <div class="card-body">
-		    <h5 class="card-title">School Management System</h5>
-		    <p class="card-text">A Django based web app for managining school activities.</p>
-		    <kbd>Django</kbd>
-		    <kbd>Mysql</kbd><br>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Code</a>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Live</a>
-		  </div>
-		</div>
-
-
-		<div id="proCards" class="card text-white bg-dark m-2" style="width: 18rem; ">
-		  <div class="card-body">
-		    <h5 class="card-title">Covid-19 Dashboard</h5>
-		    <p class="card-text">A React based dashboard for simple data visualization.</p>
-		    <kbd>ReactJS</kbd>
-		    <br>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Code</a>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Live</a>
-		  </div>
-		</div>
-
-		<div id="proCards" class="card text-white bg-dark m-2" style="width: 100%; ">
-		  <div class="card-body">
-		    <h5 class="card-title">The Ben Hotel Website</h5>
-		    <p class="card-text">Almost real-but-fake conceptual Travel Booking website built in React.</p>
-		    <kbd>ReactJS</kbd>
-		    <br>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Code</a>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Live</a>
-		  </div>
-		</div>
-
-
-		<div id="proCards" class="card text-white bg-dark m-2" style="width: 18rem; ">
-		  <div class="card-body">
-		    <h5 class="card-title">CS50 Projects</h5>
-		    <p class="card-text">A CS50 Course collection of projects built in React.</p>
-		    <kbd>ReactJS</kbd>
-		    <br>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Code</a>
-		    <a href="#" class="btn btn-primary btn-sm mr-2" style="margin-top: 1.5rem;">Live</a>
-		  </div>
-		</div>
-
-
-	</div>
 	
-	</div>
-		<div id="art" class="mt-4" style="width: 70%">
-			<div class="card bg-dark text-white" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
-  	<h5 class="card-header" style="background: #000;">
-  		
-		  <a class="navbar-brand" href="#">
-		    <img src="Monogram.svg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-		    My Medium Article
-		  </a>
+	<div class="accordion" id="accordionExample" style="width: 90%; border-radius: 15px;">
 		
-	</h5>
-  <div class="card-body">
-  	
-    <h5 class="card-title">How I used Figma, CSS Grid and CSS Flexbox to build a landing page</h5>
-    <a class="btn btn-small btn-primary" href="https://medium.com/@life_and_routes/how-i-used-figma-css-grid-and-css-flexbox-to-build-a-landing-page-be861f397fee" role="button" style="background: #000; border: none;">Read</a>
-    
+  <div class="card" style="margin: 10px; background: #000;">
+    <div class="card-header" id="headingOne">
+    	
+      <h2 class="mb-0">
+       <button class="btn btn-link btn-block text-left" for="collapseOne" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h2 class="ui header" style="color: #fff; font-family: Roboto; font-style: italic;"><i class="code icon"></i>Projects</h2>
+
+        </button>
+
+      </h2>
+
+      
+    </div>
+
+    <div id="collapseOne" class="collapse" style="overflow-y: auto;">
+      <div class="card-body" style="background: #fff;">
+      	<div class="ui relaxed divided list">
+    <div class="ui stackable two column grid">
+
+  	<div class="column">
+    	<div class="content">
+      		<a class="header"><h4 class="ui header">Spark Messenger</h4></a>
+       		<div class="description"><p>An Android messaging application to connect with the world.</p></div>
+    		<div class="ui small mt-2 mb-2 buttons">
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Code</button>
+  					<div class="or"></div>
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Live</button>
+			</div>
+     	</div>
+  	</div>
+  	<div class="column">
+    	
+    	<div class="content">
+      		<a class="header"><h4 class="ui header">School Management System</h4></a>
+       		<div class="description"><p>A Django based web app for managining school activities.</p></div>
+    		<div class="ui small mt-2 mb-2 buttons">
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Code</button>
+  					<div class="or"></div>
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Live</button>
+			</div>
+     	</div>
+  	</div>
+  	<div class="ui divider" style="width: 100%;"></div><br>
+  	<div class="column">
+    	
+    	<div class="content">
+      		<a class="header"><h4 class="ui header">Covid-19 Dashboard</h4></a>
+       		<div class="description"><p>A React based dashboard for simple data visualization.</p></div>
+    		<div class="ui small mt-2 mb-2 buttons">
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Code</button>
+  					<div class="or"></div>
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Live</button>
+			</div>
+     	</div>
+  	</div>
+  	<div class="column">
+    	
+    	<div class="content">
+      		<a class="header"><h4 class="ui header">The Ben Hotel Website</h4></a>
+       		<div class="description"><p>Almost real-but-fake conceptual Travel Booking website built in React.</p></div>
+    		<div class="ui small mt-2 mb-2 buttons">
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Code</button>
+  					<div class="or"></div>
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Live</button>
+			</div>
+     	</div>
+  	</div>
+  	<div class="ui divider" style="width: 100%;"></div><br>
+  	<div class="column">
+    	<div class="content">
+      		<a class="header"><h4 class="ui header">CS50 Projects</h4></a>
+       		<div class="description">A CS50 Course collection<br> of projects built<br> in React.</div>
+    		<div class="ui small mt-2 mb-2 buttons">
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Code</button>
+  					<div class="or"></div>
+  					<button class="ui button" style="background:#0d7377; color: #fff;">Live</button>
+			</div>
+     	</div>
+  	</div>
+  
+ 
+</div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="secs card" style="margin: 10px; background: #000;">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h2 class="ui header" style="color: #fff;font-family: Roboto; font-style: italic;"><i class="info icon"></i>About</h2>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body" style="background: #fff;">
+        <h5 class="card-title">Hi, I'm Shantanu !</h5>
+		    <p class="card-text mb-1">A Computer Science Engineering Student who has a passion for design and development.</p>
+		    
+		    <a class="ui black image label mt-2" style="background:#0d7377 !important; color: #fff !important; font-family: Roboto;">
+  				GitHub
+			</a>
+			<a class="ui black image label mt-3" style="background:#0d7377 !important; color: #fff !important;font-family: Roboto;">
+  				Behance
+			</a>
+			<a class="ui black image label mt-3" style="background:#0d7377 !important; color: #fff !important;font-family: Roboto;">
+  				LinkedIn
+			</a>
+			<a class="ui black image label mt-3" style="background:#0d7377 !important; color: #fff !important;font-family: Roboto;">
+  				Youtube
+			</a>
+			<a class="ui black image label mt-3" style="background:#0d7377 !important; color: #fff !important;font-family: Roboto;">
+  				Instagram
+			</a>
+      </div>
+    </div>
+  </div>
+  <div class="secs card" style="margin: 10px; background: #000;">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h2 class="ui header" style="color: #fff;font-family: Roboto; font-style: italic;"><i class="envelope icon"></i>Contact</h2>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body" style="background: #fff;">
+        <h5 class="card-title">How to reach out ?</h5>
+		    <p class="card-text">Email</p>
+      </div>
+    </div>
   </div>
 </div>
-		</div>
-	</div>
+	
 </div>
 </div>
 <!------------------------------------------------------------------------------------- Part-2 -->	
@@ -247,7 +280,7 @@
 	</div>
 </div>
 </div>	
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" type="text/javascript"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
