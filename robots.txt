@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://shanty97.github.io/sitemap.xml
+Host: https://shanty97.github.io
